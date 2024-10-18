@@ -14,6 +14,12 @@ export default function Home() {
           <h2 className="font-black text-5xl uppercase">Identity</h2>
         </div>
       </header>
+      <div className="w-full h-full flex flex-col justify-center items-center">
+        <h1 className="text-6xl uppercase">Not Found</h1>
+        <p className="text-md text-gray-800 uppercase">
+          Stay on the right side of the barrier please.
+        </p>
+      </div>
       <footer className="w-full px-4 py-4 flex flex-row justify-between">
         <div>{/* <a>Github</a> */}</div>
 
