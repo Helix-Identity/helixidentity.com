@@ -57,7 +57,8 @@ const TypingEffect: React.FC<TypingEffectProps> = ({
 
   return (
     <span className={globalClassName}>
-      {prefix}{" "}
+      {prefix}
+      {prefix != "" ? " " : ""}
       {text != "" ? (
         <span className={words[index].className || ""}>{text}</span>
       ) : (
