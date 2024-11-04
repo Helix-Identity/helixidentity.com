@@ -3,9 +3,15 @@ import type { AppProps } from "next/app";
 import Head from "next/head";
 
 export default function App({ Component, pageProps }: AppProps) {
+  const analyticsSrc =
+    "https://t.fullres.net/helixidentity.js?" +
+    // @ts-ignore
+    (new Date() - (new Date() % 43200000));
+
   return (
     <>
       <Head>
+        <script async src={analyticsSrc} />
         <link
           rel="apple-touch-icon"
           sizes="57x57"
